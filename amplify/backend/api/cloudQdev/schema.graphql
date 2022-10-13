@@ -1,0 +1,8 @@
+type Order @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  order_number: String!
+  phone_number: String!
+  vendor: String!
+  status: String!
+}
+ 
